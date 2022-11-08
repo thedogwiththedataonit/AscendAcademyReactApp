@@ -1,0 +1,101 @@
+.view1 {
+    background-image: url('./img/math_background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+.view1 img {
+    animation: fadeUP 1.3s ease-in-out;
+    z-index: 202;
+    left:60px;
+    position: relative;
+    max-width: 400px;
+    margin-top: 100px;}
+.view1_buttonbox {
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+.view1_box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1022;
+    top: 18%;
+    justify-content: center;
+    width: 93%;
+    height: 600px;
+    box-shadow: rgb(0 0 0 / 32%) 0px 5px 24px;
+    background-color: #2e6fba;
+}
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:70%;  text-align: center;
+    transform: translate(0,-50%);
+    animation-name: elevate ;
+    animation: elevate .8s ease-in-out;
+    position: relative;
+    top: 23%;
+}
+.titlebox h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    width:85%;
+    margin: 00px 15px 85px 15px;
+
+}
+
+.titlebox button {
+    border: 1px solid  #ffffff;
+    color:  #ffffff;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+    height:45px;
+}
+.titlebox button i {
+    margin-left: 15px;
+}
+.titlebox button:hover  {
+    background-color: rgb(214, 163, 92);
+    cursor:pointer;
+}
+.titlebox p span.typed-text {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 45px;
+  }
+.titlebox p span.cursor {
+    display: inline-block;
+    background-color:  #ffffff;
+    margin-left: .3rem;
+    width: 5px;
+    animation: blink .6s infinite;
+  }
+.titlebox p span.cursor.typing {
+    animation: none;
+  }
+@keyframes blink {
+    0%  { background-color: #ffffff; }
+    49% { background-color: #ffffff; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ffffff; }
+  }

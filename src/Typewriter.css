@@ -1,0 +1,24 @@
+.Typewriter {
+    padding: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    width:85%;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 3px solid  rgb(255, 255, 255);
+    position: relative;
+    font-size: 45px;
+    margin:0 25px 25px 25px;
+  }
+
+p {
+    text-align: center;
+    overflow: hidden;
+    width: 85%;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+    font-size: 45px;
+    margin: 0px;
+    width:100%;
+}
