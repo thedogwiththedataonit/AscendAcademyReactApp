@@ -2,21 +2,18 @@ import "./Typewriter.css";
 import TypewriterEffect from 'typewriter-effect';
 
 function Typewriter(props) {
+    const strings = ['Academics', 'Interests', 'Passions', 
+    'Career', 'Mind', 'Curiosity']
+    //get the length of each random index word
     return (
-        <div>
-            <p>
-                Elevate your 
-            </p>
-            <TypewriterEffect options={{
-                strings: ['Academics', 'Interests', 'Passions', 
-                'Career', 'Mind', 'Curiosity'],
-                autoStart: true,
-                loop: true,
-                pauseFor: 2000,
-                delay: 60,
-            }} />
-            
-          </div>
+        <TypewriterEffect
+        onInit={(typewriter) => {
+            typewriter.typeString('Hello World!')
+            .pauseFor(2500)
+            .deleteChars(5)
+            .start();
+        }}
+        />
     );
 }
 

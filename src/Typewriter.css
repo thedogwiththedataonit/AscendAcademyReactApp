@@ -8,7 +8,7 @@
     border-bottom: 3px solid  rgb(255, 255, 255);
     position: relative;
     font-size: 45px;
-    margin:0 25px 25px 25px;
+    margin:15px;
   }
 
 p {
@@ -19,6 +19,6 @@ p {
     color: #ffffff;
     position: relative;
     font-size: 45px;
-    margin: 0px;
+    margin: 15px;
     width:100%;
 }
